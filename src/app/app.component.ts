@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
   loadCmp(event: any) {
     this.isBtnClicked = true;
     // console.log(event);
-    timer(2000).subscribe((value) => {
+    timer(20).subscribe((value) => {
       this.isLoaded = true;
       this.loadDynamicComponent();
     })
