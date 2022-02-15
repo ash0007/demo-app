@@ -1,1 +1,3 @@
-class Clock {}
+class Clock {
+    
+}
