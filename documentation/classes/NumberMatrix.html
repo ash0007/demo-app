@@ -1,0 +1,1360 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>demo-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">demo-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Classes</li>
+  <li >NumberMatrix</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/classes/matrix.ts</code>
+        </p>
+
+
+
+            <p class="comment">
+                <h3>Extends</h3>
+            </p>
+            <p class="comment">
+                        <code><a href="../classes/Matrix.html" target="_self" >Matrix</a></code>
+            </p>
+
+            <p class="comment">
+                <h3>Implements</h3>
+            </p>
+            <p class="comment">
+                            <code><a href="../interfaces/INumberMatrixOps.html" target="_self" >INumberMatrixOps</a></code>
+            </p>
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#adjoint" >adjoint</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#cofactor" >cofactor</a>
+                            </li>
+                            <li>
+                                <a href="#columns" >columns</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#determinant" >determinant</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#inverse" >inverse</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isSingular" >isSingular</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#minor" >minor</a>
+                            </li>
+                            <li>
+                                <a href="#rows" >rows</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_depth" >_depth</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_dimension" >_dimension</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_matrix" >_matrix</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#add" >add</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getResultant" >getResultant</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#multiply" >multiply</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#subtract" >subtract</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#transpose" >transpose</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getDepthFromMatrix" >getDepthFromMatrix</a>
+                            </li>
+                            <li>
+                                <a href="#getDimensionFromMatrix" >getDimensionFromMatrix</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(input1?: number | Array<number>, input2?: Array<number>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="101" class="link-to-prism">src/app/classes/matrix.ts:101</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>input1</td>
+                                                  
+                                                        <td>
+                                                                    <code>number | Array&lt;number&gt;</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            Yes
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>input2</td>
+                                                  
+                                                        <td>
+                                                                    <code>Array&lt;number&gt;</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            Yes
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="adjoint"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>adjoint</b></span>
+                        <a href="#adjoint"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="160" class="link-to-prism">src/app/classes/matrix.ts:160</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cofactor"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>cofactor</b></span>
+                        <a href="#cofactor"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="158" class="link-to-prism">src/app/classes/matrix.ts:158</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="columns"></a>
+                    <span class="name">
+                        <span ><b>columns</b></span>
+                        <a href="#columns"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/app/classes/matrix.ts:97</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="determinant"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>determinant</b></span>
+                        <a href="#determinant"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="155" class="link-to-prism">src/app/classes/matrix.ts:155</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="inverse"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>inverse</b></span>
+                        <a href="#inverse"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="156" class="link-to-prism">src/app/classes/matrix.ts:156</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isSingular"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>isSingular</b></span>
+                        <a href="#isSingular"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="159" class="link-to-prism">src/app/classes/matrix.ts:159</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="minor"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>minor</b></span>
+                        <a href="#minor"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="157" class="link-to-prism">src/app/classes/matrix.ts:157</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="rows"></a>
+                    <span class="name">
+                        <span ><b>rows</b></span>
+                        <a href="#rows"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="96" class="link-to-prism">src/app/classes/matrix.ts:96</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_depth"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_depth</b></span>
+                        <a href="#_depth"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../classes/Matrix.html" target="_self" >Matrix</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../classes/Matrix.html#source" target="_self" >Matrix:13</a></code>
+</div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_dimension"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_dimension</b></span>
+                        <a href="#_dimension"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Array&lt;number&gt;</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../classes/Matrix.html" target="_self" >Matrix</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../classes/Matrix.html#source" target="_self" >Matrix:14</a></code>
+</div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_matrix"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_matrix</b></span>
+                        <a href="#_matrix"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Matrix.html" target="_self" >IMatrix&lt;T&gt;</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../classes/Matrix.html" target="_self" >Matrix</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../classes/Matrix.html#source" target="_self" >Matrix:15</a></code>
+</div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="add"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>add</b></span>
+                        <a href="#add"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>add(matrixRef: <a href="../classes/Matrix.html" target="_self">Matrix&lt;number&gt;</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="116"
+                            class="link-to-prism">src/app/classes/matrix.ts:116</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>matrixRef</td>
+                                    <td>
+                                                <code><a href="../classes/Matrix.html" target="_self" >Matrix&lt;number&gt;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Matrix.html" target="_self" >Matrix&lt;number&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getResultant"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getResultant</b></span>
+                        <a href="#getResultant"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getResultant(result: <a href="../classes/Matrix.html" target="_self">IMatrix&lt;number&gt;</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="161"
+                            class="link-to-prism">src/app/classes/matrix.ts:161</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>result</td>
+                                    <td>
+                                                <code><a href="../classes/Matrix.html" target="_self" >IMatrix&lt;number&gt;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Matrix.html" target="_self" >Matrix&lt;number&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="multiply"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>multiply</b></span>
+                        <a href="#multiply"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>multiply(matrixRef: <a href="../classes/Matrix.html" target="_self">Matrix&lt;number&gt;</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="140"
+                            class="link-to-prism">src/app/classes/matrix.ts:140</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>matrixRef</td>
+                                    <td>
+                                                <code><a href="../classes/Matrix.html" target="_self" >Matrix&lt;number&gt;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Matrix.html" target="_self" >Matrix&lt;number&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="subtract"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>subtract</b></span>
+                        <a href="#subtract"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>subtract(matrixRef: <a href="../classes/Matrix.html" target="_self">Matrix&lt;number&gt;</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="128"
+                            class="link-to-prism">src/app/classes/matrix.ts:128</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>matrixRef</td>
+                                    <td>
+                                                <code><a href="../classes/Matrix.html" target="_self" >Matrix&lt;number&gt;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Matrix.html" target="_self" >Matrix&lt;number&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="transpose"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>transpose</b></span>
+                        <a href="#transpose"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>transpose()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="148"
+                            class="link-to-prism">src/app/classes/matrix.ts:148</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Matrix.html" target="_self" >Matrix&lt;number&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDepthFromMatrix"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getDepthFromMatrix</b></span>
+                        <a href="#getDepthFromMatrix"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getDepthFromMatrix(matrix: <a href="../classes/Matrix.html" target="_self">IMatrix&lt;T&gt; | T</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/Matrix.html" target="_self" >Matrix</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/Matrix.html#source" target="_self" >Matrix:67</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>matrix</td>
+                                    <td>
+                                                <code><a href="../classes/Matrix.html" target="_self" >IMatrix&lt;T&gt; | T</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDimensionFromMatrix"></a>
+                    <span class="name">
+                        <span ><b>getDimensionFromMatrix</b></span>
+                        <a href="#getDimensionFromMatrix"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getDimensionFromMatrix(matrix: <a href="../classes/Matrix.html" target="_self">IMatrix&lt;T&gt; | T</a>, i: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/Matrix.html" target="_self" >Matrix</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/Matrix.html#source" target="_self" >Matrix:74</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>matrix</td>
+                                    <td>
+                                                <code><a href="../classes/Matrix.html" target="_self" >IMatrix&lt;T&gt; | T</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>i</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Array&lt;number&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">type IMatrix&lt;T&gt; &#x3D; Array&lt;IMatrix&lt;T&gt;&gt; | Array&lt;T&gt;;
+
+const DEFAULT_DEPTH &#x3D; 0;
+const DEFAULT_DIMENSION: Array&lt;number&gt; &#x3D; [];
+
+enum ErrorMsg {
+    INVALID_MATRIX &#x3D; &#x60;Invalid Matrices&#x60;,
+    INVALID_MATRIX_DIMENSION &#x3D; &#x60;Invalid matrix dimensions&#x60;,
+    MULTIPLICATION_NOT_VALID &#x3D; &#x60;Multiplication is not valid&#x60;
+};
+
+class Matrix&lt;T&gt; {
+    private _depth: number;
+    private _dimension: Array&lt;number&gt;;
+    private _matrix: IMatrix&lt;T&gt;;
+    constructor();
+    constructor(depth: number);
+    constructor(dimenstion: Array&lt;number&gt;);
+    constructor(depth: number, dimenstion: Array&lt;number&gt;);
+    constructor(input1?: number | Array&lt;number&gt;, input2?: Array&lt;number&gt;) {
+        if(!input1) {
+            this._depth &#x3D; DEFAULT_DEPTH;
+            this._dimension &#x3D; DEFAULT_DIMENSION;
+        } else if(!input2) {
+            if(typeof input1 &#x3D;&#x3D;&#x3D; &#x27;number&#x27;) {
+                this._depth &#x3D; input1;
+                this._dimension &#x3D; Array.from({length: this._depth}).fill(0) as Array&lt;number&gt;;
+            }
+            if(Array.isArray(input1)) {
+                this._depth &#x3D; input1.length;
+                this._dimension &#x3D; input1;
+            }
+        } else {
+            this._depth &#x3D; input1 as number;
+            this._dimension &#x3D; input2;
+        }
+        const utilProps &#x3D; Object.getPrototypeOf(MatrixUtil.getInstance());
+        for(let prop in utilProps) {
+            (this as any)[prop] &#x3D; utilProps[prop];
+        }
+        // Object.assign(this, MatrixUtil.getInstance());
+        // console.log(MatrixUtil.getInstance());
+    }
+    get depth(): number {
+        return this._depth;
+    }
+    set depth(depth: number) {
+        this._depth &#x3D; depth;
+    }
+    get dimension(): Array&lt;number&gt; {
+        return this._dimension;
+    }
+    set dimension(dimension: Array&lt;number&gt;) {
+        this._depth &#x3D; this._dimension.length;
+        this._dimension &#x3D; dimension;
+    }
+    get matrix(): IMatrix&lt;T&gt; {
+        return this._matrix;
+    }
+    set matrix(matrix: IMatrix&lt;T&gt;) {
+        this.depth &#x3D; 0;
+        this.depth &#x3D; this.getDepthFromMatrix(matrix);
+        this.dimension &#x3D; Array.from({length: this._depth}).fill(0) as Array&lt;number&gt;;
+        this.dimension &#x3D; this.getDimensionFromMatrix(matrix, 0);
+        this._matrix &#x3D; matrix;
+    }
+    private getDepthFromMatrix(matrix: IMatrix&lt;T&gt; | T): number {
+        if (Array.isArray(matrix)) {
+            this.depth++;
+            this.getDepthFromMatrix(matrix[0]);
+        }
+        return this.depth;
+    }
+    getDimensionFromMatrix(matrix: IMatrix&lt;T&gt; | T, i: number): Array&lt;number&gt; {
+        if (Array.isArray(matrix)) {
+            this.dimension[i++] &#x3D; matrix.length;
+            this.getDimensionFromMatrix(matrix[0], i);
+        }
+        return this.dimension;
+    }
+}
+
+interface INumberMatrixOps {
+    add: (matrix: Matrix&lt;number&gt;) &#x3D;&gt; Matrix&lt;number&gt;;
+    subtract: (matrix: Matrix&lt;number&gt;) &#x3D;&gt; Matrix&lt;number&gt;;
+    multiply: (matrix: Matrix&lt;number&gt;) &#x3D;&gt; Matrix&lt;number&gt;;
+    transpose: () &#x3D;&gt; Matrix&lt;number&gt;;
+    determinant: () &#x3D;&gt; number;
+    inverse: () &#x3D;&gt; Matrix&lt;number&gt;;
+    minor: (element: number) &#x3D;&gt; Matrix&lt;number&gt;;
+    cofactor: (minor: Matrix&lt;number&gt; | number) &#x3D;&gt; number;
+    isSingular: () &#x3D;&gt; boolean;
+    adjoint: () &#x3D;&gt; Matrix&lt;number&gt;;
+}
+class NumberMatrix extends Matrix&lt;number&gt; implements INumberMatrixOps {
+    rows: number;
+    columns: number;
+    constructor();
+    constructor(depth: number);
+    constructor(dimenstion: Array&lt;number&gt;);
+    constructor(depth: number, dimenstion: Array&lt;number&gt;);
+    constructor(input1?: number | Array&lt;number&gt;, input2?: Array&lt;number&gt;) {
+        if(!input1) {
+            super();
+        } else if(!input2) {
+            if(typeof input1 &#x3D;&#x3D;&#x3D; &#x27;number&#x27;) {
+                super(input1);
+            } else {
+                super(input1);
+            }
+        } else {
+            super(input1 as number, input2);
+        }
+        // this.rows &#x3D; this.matrix.length;
+    }
+    public add(matrixRef: Matrix&lt;number&gt;): Matrix&lt;number&gt; {
+        const result: IMatrix&lt;number&gt; &#x3D; [];
+        if(this.depth &lt; 1 || matrixRef.depth &lt; 1) {
+            throw ErrorMsg.INVALID_MATRIX;
+        }
+        if ((matrixRef as any).isDimensionSame(this)) {
+            (this as any).addArrays(matrixRef.matrix, this.matrix, result);
+            return this.getResultant(result);
+        } else {
+            throw ErrorMsg.INVALID_MATRIX_DIMENSION;
+        }
+    }
+    public subtract(matrixRef: Matrix&lt;number&gt;): Matrix&lt;number&gt; {
+        const result: IMatrix&lt;number&gt; &#x3D; [];
+        if(this.depth &lt; 1 || matrixRef.depth &lt; 1) {
+            throw ErrorMsg.INVALID_MATRIX;
+        }
+        if ((matrixRef as any).isDimensionSame(this)) {
+            (this as any).subtractArrays(matrixRef.matrix, this.matrix, result);
+            return this.getResultant(result);
+        } else {
+            throw ErrorMsg.INVALID_MATRIX_DIMENSION;
+        }
+    }
+    public multiply(matrixRef: Matrix&lt;number&gt;): Matrix&lt;number&gt; {
+        if(this.matrix.length &#x3D;&#x3D;&#x3D; (matrixRef.matrix[0] as Array&lt;number&gt;).length) {
+
+        } else {
+            throw ErrorMsg.MULTIPLICATION_NOT_VALID;
+        }
+        return null;
+    }
+    public transpose(): Matrix&lt;number&gt; {
+        if(this.depth &lt; 1) {
+            throw ErrorMsg.INVALID_MATRIX;
+        }
+        
+        return null;
+    }
+    public determinant: () &#x3D;&gt; number;
+    public inverse: () &#x3D;&gt; Matrix&lt;number&gt;;
+    public minor: (element: number) &#x3D;&gt; Matrix&lt;number&gt;;
+    public cofactor: (minor: number | Matrix&lt;number&gt;) &#x3D;&gt; number;
+    public isSingular: () &#x3D;&gt; boolean;
+    public adjoint: () &#x3D;&gt; Matrix&lt;number&gt;;
+    private getResultant(result: IMatrix&lt;number&gt;): Matrix&lt;number&gt; {
+        const resultant &#x3D; new Matrix&lt;number&gt;(this.depth, this.dimension);
+        resultant.matrix &#x3D; result;
+        return resultant;
+    }
+}
+
+class MatrixUtil&lt;T&gt; {
+    private static _instance: MatrixUtil&lt;any&gt;;
+    private constructor() { }
+    public isDimensionSame(matrixRef: Matrix&lt;T&gt;): boolean {
+        const that &#x3D; this as any;
+        let flag &#x3D; that.dimension.length &#x3D;&#x3D;&#x3D; matrixRef.dimension.length;
+        if(flag) {
+            that.dimension.forEach((element: number, index: number) &#x3D;&gt; {
+                flag &#x3D; element &#x3D;&#x3D;&#x3D; matrixRef.dimension[index];
+            });
+        }
+        return flag;
+    }
+    public addArrays(arr1: IMatrix&lt;number&gt;, arr2: IMatrix&lt;number&gt;, result: IMatrix&lt;number&gt;) {
+        Object.keys(arr1).forEach((value: string, index: number) &#x3D;&gt; {
+            if(Array.isArray(arr1[index]) &amp;&amp; Array.isArray(arr2[index])) {
+                if(!result[index]) result[index] &#x3D; [];
+                this.addArrays(arr1[index] as IMatrix&lt;number&gt;, arr2[index] as IMatrix&lt;number&gt;, result[index] as IMatrix&lt;number&gt;);
+            } else {
+                result[index] &#x3D; (arr1[index] as number) + (arr2[index] as number);
+            }
+        });
+    }
+    public subtractArrays(arr1: IMatrix&lt;number&gt;, arr2: IMatrix&lt;number&gt;, result: IMatrix&lt;number&gt;) {
+        Object.keys(arr1).forEach((value: string, index: number) &#x3D;&gt; {
+            if(Array.isArray(arr1[index]) &amp;&amp; Array.isArray(arr2[index])) {
+                if(!result[index]) result[index] &#x3D; [];
+                this.subtractArrays(arr1[index] as IMatrix&lt;number&gt;, arr2[index] as IMatrix&lt;number&gt;, result[index] as IMatrix&lt;number&gt;);
+            } else {
+                result[index] &#x3D; (arr1[index] as number) - (arr2[index] as number);
+            }
+        });
+    }
+    public static getInstance() {
+        if(!MatrixUtil._instance) {
+            MatrixUtil._instance &#x3D; new MatrixUtil();
+        }
+        return MatrixUtil._instance;
+    }
+}
+
+class NumberMatrixUtil {
+    private constructor() { }
+    private _instance: NumberMatrixUtil;
+}
+
+class MatrixGenerator {
+    constructor() {}
+}</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'NumberMatrix.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

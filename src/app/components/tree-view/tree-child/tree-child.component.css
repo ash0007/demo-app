@@ -1,0 +1,13 @@
+.h-line-level {
+    position: absolute;
+    left: -1px;
+    top: 8px;
+    background-color: #484747;
+    height: 1px;
+    align-items: center;
+    content: '';
+  }
+  
+  .children-container {
+    padding-left: 10px;
+  }

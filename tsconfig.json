@@ -8,20 +8,29 @@
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
+    "strictPropertyInitialization": false,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
     "importHelpers": true,
-    "target": "es2017",
+    "target": "es2015",
     "module": "es2020",
     "lib": [
-      "es2020",
+      "es2018",
       "dom"
-    ]
+    ],
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noFallthroughCasesInSwitch": true,
+    "strictNullChecks": false,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

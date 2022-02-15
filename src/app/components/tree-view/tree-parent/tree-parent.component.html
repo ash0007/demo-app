@@ -1,0 +1,5 @@
+<h2>Tree data visualized </h2>
+
+<div *ngIf="treeNode"> 
+  <app-tree-child *ngFor="let ch of treeNode.children" [node]="ch"></app-tree-child>
+</div>

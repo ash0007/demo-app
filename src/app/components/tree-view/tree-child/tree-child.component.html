@@ -1,0 +1,10 @@
+
+<div class="child-contents-container">
+    <div>
+      <p>{{node.data}}</p>
+    <div>
+    <div class="children-container">
+      <app-tree-child *ngFor="let ch of node.children" [node]="ch"></app-tree-child>    
+    </div>
+  
+  </div>

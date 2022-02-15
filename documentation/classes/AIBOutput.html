@@ -1,0 +1,706 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>demo-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">demo-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Classes</li>
+  <li >AIBOutput</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/classes/AIBinarySystem.ts</code>
+        </p>
+
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#calculate" >calculate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#expression" >expression</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#fn" >fn</a>
+                            </li>
+                            <li>
+                                <a href="#get" >get</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getBinaryOutputSequence" >getBinaryOutputSequence</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ioMap" >ioMap</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#outputSeq" >outputSeq</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#outputString" >outputString</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#reset" >reset</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(systemInputs: <a href="../classes/AIBInput.html" target="_self">AIBInput</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/classes/AIBinarySystem.ts:44</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>systemInputs</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/AIBInput.html" target="_self" >AIBInput</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="calculate"></a>
+                    <span class="name">
+                        <span ><b>calculate</b></span>
+                        <a href="#calculate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/classes/AIBinarySystem.ts:53</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="expression"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>expression</b></span>
+                        <a href="#expression"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/classes/AIBinarySystem.ts:43</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fn"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>fn</b></span>
+                        <a href="#fn"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/classes/AIBinarySystem.ts:44</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="get"></a>
+                    <span class="name">
+                        <span ><b>get</b></span>
+                        <a href="#get"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/app/classes/AIBinarySystem.ts:73</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBinaryOutputSequence"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>getBinaryOutputSequence</b></span>
+                        <a href="#getBinaryOutputSequence"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/classes/AIBinarySystem.ts:48</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ioMap"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>ioMap</b></span>
+                        <a href="#ioMap"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/classes/AIBinarySystem.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="outputSeq"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>outputSeq</b></span>
+                        <a href="#outputSeq"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Array&lt;number&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/classes/AIBinarySystem.ts:41</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="outputString"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>outputString</b></span>
+                        <a href="#outputString"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/classes/AIBinarySystem.ts:42</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="reset"></a>
+                    <span class="name">
+                        <span ><b>reset</b></span>
+                        <a href="#reset"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>reset()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="66"
+                            class="link-to-prism">src/app/classes/AIBinarySystem.ts:66</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { solve } from &#x27;./k-map-solver&#x27;;
+
+class AIBInput {
+    public bits: number;
+    public maxInputCombinations: ArrayOfArray&lt;number&gt;;
+    public maxNumberOfOutputs: number;
+    public symbols: Array&lt;string&gt;;
+
+    public inputs: ArrayOfArray&lt;number&gt;;
+    public outputFnsList: Array&lt;number&gt;;
+
+    constructor(bits: number);
+    constructor(symbols: Array&lt;string&gt;);
+    constructor(_input1: Array&lt;string&gt; | number) {
+        if(typeof _input1 &#x3D;&#x3D;&#x3D; &#x27;number&#x27;) {
+            this.bits &#x3D; _input1;
+            this.symbols &#x3D; BinUtil.getSymbolsList(this.bits);
+        } else {
+            this.bits &#x3D; _input1.length;
+        }
+        this.maxInputCombinations &#x3D; BinUtil.getMaximumInputCombinations(this.bits);
+        this.maxNumberOfOutputs &#x3D; Math.pow(1, Math.pow(2, this.bits));
+    }
+    public setInputs(_inputs: SystemInputType): void {
+        this.inputs &#x3D; BinUtil.getStandardInputs(_inputs);
+    }
+    public setOutputFnsList(_outputFnsList: FnInputType): void {
+        this.outputFnsList &#x3D; BinUtil.getFnList(_outputFnsList);
+    }
+}
+
+class AIBOutput {
+    public ioMap: any;
+    public outputSeq: Array&lt;number&gt;;
+    public outputString: string;
+    public expression: string;
+    public fn: string;
+
+    constructor(private systemInputs: AIBInput) {}
+
+    private getBinaryOutputSequence &#x3D; (n: number, maxInputCombinations: number) &#x3D;&gt; {
+        const bitSeq &#x3D; BinUtil.decimalToBitArray(n);
+        bitSeq.unshift(maxInputCombinations - bitSeq.length);
+        return bitSeq;
+    }
+    calculate &#x3D; (fnNo: number): void &#x3D;&gt; {
+        this.outputSeq &#x3D; this.getBinaryOutputSequence(fnNo, this.systemInputs.maxInputCombinations.length);
+
+        
+        this.ioMap &#x3D; this.outputSeq.map((_, idx) &#x3D;&gt; this.getBinaryOutputSequence(idx, this.systemInputs.bits).reduce((a, v, index) &#x3D;&gt; ({ ...a, [this.systemInputs.symbols[index]]: v, [&#x27;f&#x27; + fnNo]: this.outputSeq[idx], Y: this.outputSeq[idx] }), {}));
+        
+        this.outputString &#x3D; this.outputSeq.join(&quot;&quot;);
+        
+        const minterm &#x3D; this.outputSeq.map((value, index) &#x3D;&gt; value ? index : null).filter(v &#x3D;&gt; (v !&#x3D;&#x3D; null));
+        this.expression &#x3D; (this.systemInputs.bits &gt; 1 &amp;&amp; this.systemInputs.bits &lt; 5) ? ((this.outputSeq.indexOf(1) &gt; -1) ? solve(this.systemInputs.symbols, minterm).expression : &#x27;0&#x27;) : null;
+        
+        this.fn &#x3D; &#x27;f&#x27; + fnNo;
+    }
+    reset(): void {
+        this.ioMap &#x3D; null;
+        this.outputSeq &#x3D; [];
+        this.outputString &#x3D; null;
+        this.expression &#x3D; null;
+        this.fn &#x3D; null;
+    }
+    get &#x3D; (): AIBOutput &#x3D;&gt; {
+        return {
+            ioMap: this.ioMap,
+            outputSeq: this.outputSeq,
+            outputString: this.outputString,
+            expression: this.expression,
+            fn: this.fn,
+        } as AIBOutput;
+    }
+}
+
+class BooleanMagicBox {
+    private systemOutput: AIBOutput;
+    private _output: {[key: string]: AIBOutput};
+    constructor(private systemInputs: AIBInput) {
+        this._output &#x3D; {};
+    }
+    create(): void {
+        this.reset();
+        if(this.systemInputs.outputFnsList?.length &gt; 0) {
+            for(let i of this.systemInputs.outputFnsList) {
+                this.systemOutput &#x3D; new AIBOutput(this.systemInputs);
+                this.systemOutput.calculate(i);
+                this._output[&#x27;f&#x27; + i] &#x3D; this.systemOutput.get();
+            }
+        } else {
+            const noOfOutputs &#x3D; this.systemInputs.bits &gt; 4 ? 1000 : this.systemInputs.maxNumberOfOutputs;
+            for( let i &#x3D; 0; i &lt; noOfOutputs; i++ ) {
+                this.systemOutput &#x3D; new AIBOutput(this.systemInputs);
+                this.systemOutput.calculate(i);
+                this._output[&#x27;f&#x27; + i] &#x3D; this.systemOutput.get();
+            }
+        }
+    }
+    reset(): void {
+        this._output &#x3D; {};
+    }
+    get output(): {[key: string]: AIBOutput} {
+        if(!this._output) {
+            this.create();
+        }
+        return JSON.parse(JSON.stringify(this._output));
+    }
+}
+
+class BinUtil {
+    public static getMaximumInputCombinations &#x3D; (t: number) &#x3D;&gt; {
+        let dd &#x3D; Array(Math.pow(2,t)).fill([]).map((_,i) &#x3D;&gt; Number(i).toString(2).split(&quot;&quot;)).map(e &#x3D;&gt; e.map(t &#x3D;&gt; Number(t)));
+        dd.forEach(e &#x3D;&gt; e.unshift(...Array(t - e.length).fill(0)));
+        return dd;
+    };
+    public static getSymbolsList &#x3D; (bits: number) &#x3D;&gt; Array.isArray(bits) ? bits : Array(bits).fill(0).map((_, idx) &#x3D;&gt; String.fromCharCode(&#x27;a&#x27;.charCodeAt(0) + idx));
+
+    public static binaryToBitArray &#x3D; (n: number) &#x3D;&gt; n.toString().split(&quot;&quot;).map((e: number | string) &#x3D;&gt; Number(e));
+
+    public static decimalToBitArray &#x3D; (n: number) &#x3D;&gt; Number(n).toString(2).split(&quot;&quot;).map((e: number | string) &#x3D;&gt; Number(e));
+    
+    public static isBinary &#x3D; (inp: Array&lt;number | string&gt; | string | number) &#x3D;&gt; inp.toString().split(&quot;&quot;).findIndex(e &#x3D;&gt; !(Number(e) &gt; 1 || Number(e) &lt; 0)) &gt; -1;
+
+    public static isArrayOfArray &#x3D; (arr: SystemInputType) &#x3D;&gt; (Array.isArray(arr) &amp;&amp; (arr as []).filter((e) &#x3D;&gt; Array.isArray(e)).length &#x3D;&#x3D;&#x3D; arr.length);
+
+    public static sanitizeTwoDArray &#x3D; (arr: ArrayOfArray&lt;string | number&gt;) &#x3D;&gt; {
+        arr &#x3D; arr.filter(e &#x3D;&gt; Array.isArray(e));
+        return arr.map(a &#x3D;&gt; a.map(e &#x3D;&gt; Number(Boolean(Number(e)))));
+    }
+
+    public static minStandardInputsArray &#x3D; (array: ArrayOfArray&lt;string | number&gt;) &#x3D;&gt; {
+        let minLength &#x3D; Math.pow(2, 32) - 1;
+        array.forEach(e &#x3D;&gt; minLength &gt; e.length ? minLength &#x3D; e.length : null);
+        array.forEach(e &#x3D;&gt; minLength &lt; e.length ? e.length &#x3D; minLength : null);
+        return array as ArrayOfArray&lt;number&gt;;
+    };
+
+    public static maxStandardInputsArray &#x3D; (array: ArrayOfArray&lt;string | number&gt;) &#x3D;&gt; {
+        let maxLength &#x3D; 0;
+        array.forEach(e &#x3D;&gt; maxLength &lt; e.length ? maxLength &#x3D; e.length : null);
+        array.forEach(e &#x3D;&gt; maxLength &gt; e.length ? e.unshift(...Array(maxLength - e.length).fill(0)) : null);
+        return array as ArrayOfArray&lt;number&gt;;
+    };
+
+    public static getBitsSymbols &#x3D; (n: Array&lt;string&gt; | number) &#x3D;&gt; Array.isArray(n) ? n : Array(n).fill(0).map((_, idx) &#x3D;&gt; String.fromCharCode(&#x27;a&#x27;.charCodeAt(0) + idx));
+
+    public static getStandardInputs(inputs: SystemInputType, isMinimalSystem?: boolean) {
+        let isBinaryInput &#x3D; false;
+        const convertTo2DArray &#x3D; (isBinary: boolean) &#x3D;&gt; {
+            if(!isBinary) {
+                inputs &#x3D; (inputs as []).map((e) &#x3D;&gt; BinaryUtil.decimalToBitArray(e));
+            } else {
+                inputs &#x3D; (inputs as []).map((e) &#x3D;&gt; BinaryUtil.binaryToBitArray(e));
+            }
+        }
+        if(!BinaryUtil.isArrayOfArray(inputs) &amp;&amp; !Array.isArray(inputs)) {
+            isBinaryInput &#x3D; BinaryUtil.isBinary(inputs);
+            inputs &#x3D; inputs.toString().split(&quot;,&quot;);
+            convertTo2DArray(isBinaryInput);
+        } else if(!BinaryUtil.isArrayOfArray(inputs) &amp;&amp; Array.isArray(inputs)) {
+            isBinaryInput &#x3D; BinaryUtil.isBinary(inputs[0]);
+            convertTo2DArray(isBinaryInput);
+        } else {
+            inputs &#x3D; BinaryUtil.sanitizeTwoDArray(inputs as ArrayOfArray&lt;string | number&gt;);
+        }
+        
+        return isMinimalSystem ? BinaryUtil.minStandardInputsArray(inputs as ArrayOfArray&lt;string | number&gt;) : BinaryUtil.maxStandardInputsArray(inputs as ArrayOfArray&lt;string | number&gt;);
+    }
+
+    public static getFnList(fnO: FnInputType) {
+        if(fnO &amp;&amp; !Array.isArray(fnO)) {
+            fnO &#x3D; [Number(fnO)];
+        }
+        return fnO as Array&lt;number&gt;;
+    }
+}</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'AIBOutput.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
