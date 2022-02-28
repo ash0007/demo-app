@@ -19,9 +19,9 @@
     ],
     "importHelpers": true,
     "target": "es2015",
-    "module": "es2020",
+    "module": "esnext",
     "lib": [
-      "es2018",
+      "es2020",
       "dom"
     ],
     "noImplicitAny": true,

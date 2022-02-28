@@ -1,23 +1,6 @@
 <!-- <div style="width: 100%; height: 20vh;"> -->
     <!-- <router-outlet></router-outlet> -->
 <!-- </div> -->
-<button (click)="loadCmp($event);" *ngIf="!isBtnClicked">Load Component</button>
-<div style="width: 100%; height: 80vh;">
-    <div *ngIf="!isLoaded && isBtnClicked">
-        <span class="skeleton-loader-background"></span>
-        <span class="skeleton-loader-background"></span>
-        <span class="skeleton-loader-background"></span>
-        <span class="skeleton-loader-background"></span>
-        <span class="skeleton-loader-background"></span>
-        <span class="skeleton-loader-background"></span>
-        <span class="skeleton-loader-background"></span>
-        <span class="skeleton-loader-background"></span>
-        <span class="skeleton-loader-background"></span>
-        <span class="skeleton-loader-background"></span>
-        <span class="skeleton-loader-background"></span>
-        <span class="skeleton-loader-background"></span>
-    </div>
-    <ng-container *ngIf="isLoaded">
-        <ng-container #lazyLoadCmp></ng-container>
-    </ng-container>
-</div>
+<!-- <app-main></app-main> -->
+
+<app-map></app-map>

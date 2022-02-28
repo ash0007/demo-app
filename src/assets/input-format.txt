@@ -1,0 +1,47 @@
+n, inputs, fnO
+
+1. n
+2. inputs
+3. fnO
+4. n, inputs
+5. n, fnO
+6. inputs, fnO
+7. n, inputs, fnO
+
+1.
+    n  --->
+            inputs = All possible input combinations of n inputs
+            fnO    = All possible outputs of n inputs
+
+2.
+    inputs  --->
+            n =====> 1. For minimal system
+                        n = minLength array in inputs
+                     2. For non-maximal system
+                        n = maxLength array in inputs
+            fnO ===> All possible outputs of n inputs
+
+3.
+    fnO  --->
+            n      = calculated from fnO's max value, exponent of 2
+            inputs = All possible input combinations of n inputs
+        
+4.  
+    n, inputs   --->
+            inputs = sanitize inputs => inupts[].length = n
+            fnO    = All possible outputs of n inupts
+
+5.
+    n, fnO     --->
+            inputs = All possible input combinations of n inputs
+
+6.
+    inputs, fnO -->
+            n  ====> 1. For minimal system
+                        n = minLength array in inputs
+                     2. For non-maximal system
+                        n = maxLength array in inputs
+
+7.
+    n, inputs, fnO  --->
+                inputs = sanitize inputs => inupts[].length = n

@@ -4,6 +4,8 @@
  * 2. Calculate expression for > 4 variable system
  * DONE 3. Support of all types of input formats like string, boolean sequence, decimal, decimal sequence
  * 4. BooleanMagicBox smart input support
+ * 5. Implementation for SOP and POS
+ * 6. Modes implementation like educational/observational and practical/industrial
  */
 
 import { solve } from './k-map-solver';

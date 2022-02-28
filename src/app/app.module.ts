@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { DrawAnimComponent } from './components/draw-anim/draw-anim.component';
 import { StockListComponent } from './components/stocks/stock-list/stock-list.component';
 import { DemoComponent } from './components/demo/demo.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { DemoComponent } from './components/demo/demo.component';
     DrawAnimComponent,
     StockListComponent,
     DemoComponent,
+    MainComponent,
   ],
   imports: [
     BrowserModule,

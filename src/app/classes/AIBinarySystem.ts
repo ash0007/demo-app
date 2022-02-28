@@ -1,15 +1,23 @@
-// type ArrayOfArray<T> = Array<Array<T>>;
 /**
- * Task remaining
+ * Enhancements : Task remaining
  * 1. Observer pattern to sense the change in input and get output.
+ * 2. BooleanMagicBox smart input support
+ * New Features: Tasks
+ * 1. Expression for > 4 variable system
+ * 2. Implementation for SOP and POS
+ * 3. Modes implementation like educational/observational and practical/industrial
+ * 4. Adding support for don't care conditions.
  */
 
 
 import { solve } from './k-map-solver';
 
+type ArrayOfArray<T> = Array<Array<T>>;
+type SystemInputType = ArrayOfArray<number> | Array<number | string> | number | string;
 class AIBInput {
     public bits: number;
     public maxInputCombinations: ArrayOfArray<number>;
+    public dontCareInputs: ArrayOfArray<number>;
     public maxNumberOfOutputs: number;
     public symbols: Array<string>;
 
