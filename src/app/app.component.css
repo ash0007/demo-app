@@ -3,3 +3,12 @@
   height: 100%;
   overflow: auto;
 }
+.main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.header {
+  height: 7vh;
+  background-color: #483d8b;
+}

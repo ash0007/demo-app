@@ -1,0 +1,5 @@
+<div class="main-container">
+    <ng-container *ngFor="let magic of magicBox | keyvalue">
+        <app-boolean-truth-table [magic]="magic?.value"></app-boolean-truth-table>
+    </ng-container>
+</div>

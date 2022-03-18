@@ -261,8 +261,8 @@ export type KMapGrayCode = {
     }
   }
   
-  module.exports = {
-    solve,
-    KMapGrayCodes
-  }
+  // module.exports = {
+  //   solve,
+  //   KMapGrayCodes
+  // }
   

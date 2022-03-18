@@ -3,4 +3,19 @@
 <!-- </div> -->
 <!-- <app-main></app-main> -->
 
-<app-map></app-map>
+<!-- <app-map></app-map> -->
+<!-- <div fxLayout="row"> -->
+    <!-- <div #lazyLoadCmp fxFlex="40"></div> -->
+    
+    <!-- <div #lazyLoadCmp1 fxFlex="40"></div> -->
+    <!-- <app-tree-view></app-tree-view> -->
+    <!-- <div class="main-container">
+        <ng-container *ngFor="let magic of magicBox | keyvalue">
+            <app-boolean-truth-table [magic]="magic?.value"></app-boolean-truth-table>
+        </ng-container>
+    </div> -->
+<!-- </div> -->
+<div class="header">
+    <ng-container *ngComponentOutlet="headerMenu"></ng-container>
+</div>
+<ng-container #renderingTmpl></ng-container>

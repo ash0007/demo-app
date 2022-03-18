@@ -246,7 +246,8 @@ function BooleanMagicBox(n, input, fnO) {
             outputSeq: hasValue(decimalInput) ? outputSeq[decimalInput] : outputSeq,
             outputString: hasValue(decimalInput) ? [outputSeq[decimalInput]].join("") : outputSeq.join(""),
             expression: (n > 1 & n < 5) ? ((outputSeq.indexOf(1) > -1) ? solve(variables, minterm).expression : '0') : null,
-            fn: 'f' + k
+            fn: 'f' + k,
+            inputs: variables
         };
     };
     if(!Array.isArray(fnO)) {

@@ -1,0 +1,21 @@
+<!-- <div class="tt-container">
+    <div class="tt-container-header">
+        <div class="tt-container-header-cell" *ngFor="let inp of magic?.inputs; let c = count">{{ inp }}</div>
+        <div class="tt-container-header-cell">{{ 'Y' + " = " + magic?.expression }}</div>
+    </div>
+    <div class="tt-container-row" *ngFor="let map of magic?.ioMap">
+        <div class="tt-container-row-cell" *ngFor="let inp of magic?.inputs; let c = count">{{ map[inp] }}</div>
+        <div class="tt-container-row-cell">{{ map['Y'] }}</div>
+    </div>
+</div> -->
+
+<div class="tt-container-2">
+    <div class="tt-container-2-column" *ngFor="let inp of magic?.inputs;">
+        <div class="tt-container-2-column-cell">{{inp}}</div>
+        <div class="tt-container-2-column-cell" *ngFor="let map of magic?.ioMap">{{ map[inp] }}</div>
+    </div>
+    <div class="tt-container-2-column">
+        <div class="tt-container-2-column-cell">Y={{magic?.expression}}</div>
+        <div class="tt-container-2-column-cell" *ngFor="let map of magic?.ioMap">{{ map['Y'] }}</div>
+    </div>
+</div>

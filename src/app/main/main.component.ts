@@ -26,17 +26,17 @@ export class MainComponent implements OnInit {
     // console.log(event);
     timer(20).subscribe((value) => {
       this.isLoaded = true;
-      // this.loadDynamicComponent();
+      this.loadDynamicComponent();
     });
   }
-  // async loadDynamicComponent() {
-  //   this.vcref?.clear();
-  //   import('../components/canvas/canvas.component').then((cmp: any) => {
-  //     const componentName: string = Object.keys(cmp)[0];
-  //     let clockCmp = this.vcref.createComponent(
-  //       this.cfr.resolveComponentFactory( cmp[componentName] )
-  //     );
-  //   });
-  //   // clockCmp.instance.radius = 160;
-  // }
+  loadDynamicComponent() {
+    this.vcref?.clear();
+    import('../components/canvas/canvas.component').then((cmp: any) => {
+      const componentName: string = Object.keys(cmp)[0];
+      let clockCmp = this.vcref.createComponent(
+        this.cfr.resolveComponentFactory( cmp[componentName] )
+      );
+    });
+    // clockCmp.instance.radius = 160;
+  }
 }

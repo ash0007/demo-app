@@ -21,5 +21,9 @@ export class TreeParentComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    if(this.tree != null) {
+      this.treeNode = this.tree.getRoot();
+    }
+  }
 }

@@ -1,0 +1,14 @@
+<button mat-icon-button [matMenuTriggerFor]="menuItems" aria-label="Example icon-button with a menu">
+    <mat-icon>more_vert</mat-icon>
+</button>
+<mat-menu #menuItems="matMenu">
+    <ng-container *ngFor="let item of itemsList">
+        <button *ngIf="!!item?.matMenuTriggerFor; else leafItem" [matMenuTriggerFor]="item?.matMenuTriggerFor"></button>
+    </ng-container>
+</mat-menu>
+<ng-template #leafItem let-item="item">
+    <button mat-menu-item>
+        <mat-icon>{{ item?.icon }}</mat-icon>
+        <span>{{ item?.label }}</span>
+    </button>
+</ng-template>
